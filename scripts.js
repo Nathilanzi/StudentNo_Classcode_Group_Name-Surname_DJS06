@@ -13,3 +13,7 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+// 1. forEach Basics
+provinces.forEach(province => console.log(province));
+names.forEach(name => console.log(name));
+names.forEach((name, index) => console.log(${name} (${provinces[index]})) );
