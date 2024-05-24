@@ -49,3 +49,5 @@ products.filter(p => p.product.length <= 5),
 "Total price: " + products
 .filter(p => p.price && !isNaN(p.price)) // Filter out invalid prices
 .reduce((sum, p) => sum + Number(p.price), 0), // Convert to numbers and sum
+ // 4. Link Product Names
+ products.reduce((str, p) => str + p.product, ""),
