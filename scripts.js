@@ -38,3 +38,8 @@ const nameProvinceMap = names.reduce((map, name, index) => {
   return map;
 }, {});
 console.log(nameProvinceMap);
+// Advanced Exercises
+
+console.log(
+  // 1. Log Products
+  products.map(p => p.product),
