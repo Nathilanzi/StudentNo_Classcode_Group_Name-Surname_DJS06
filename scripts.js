@@ -16,7 +16,7 @@ const products = [
 // 1. forEach Basics
 provinces.forEach(province => console.log(province));
 names.forEach(name => console.log(name));
-names.forEach((name, index) => console.log(${name} (${provinces[index]})) );
+names.forEach((name, index) => console.log('${name} (${provinces[index]})') );
 // 2. Uppercase Transformation
 const uppercaseProvinces = provinces.map(province => province.toUpperCase());
 console.log(uppercaseProvinces);
@@ -28,7 +28,7 @@ const sortedProvinces = provinces.slice().sort(); // Slice to avoid mutating the
 console.log(sortedProvinces);
 // 5. Filtering Cape
 const noCapeProvinces = provinces.filter(province => !province.includes('Cape'));
-console.log(Count of remaining provinces: ${noCapeProvinces.length});
+console.log('Count of remaining provinces: ${noCapeProvinces.length});')
 // 6. Finding 'S'
 const namesWithS = names.map(name => name.toLowerCase().includes('s'));
 console.log(namesWithS);
