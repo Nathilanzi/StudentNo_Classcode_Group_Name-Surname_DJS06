@@ -23,3 +23,6 @@ console.log(uppercaseProvinces);
 // 3. Name Lengths
 const nameLengths = names.map(name => name.length);
 console.log(nameLengths);
+// 4. Sorting
+const sortedProvinces = provinces.slice().sort(); // Slice to avoid mutating the original
+console.log(sortedProvinces);
