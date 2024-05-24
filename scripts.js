@@ -51,3 +51,8 @@ products.filter(p => p.product.length <= 5),
 .reduce((sum, p) => sum + Number(p.price), 0), // Convert to numbers and sum
  // 4. Link Product Names
  products.reduce((str, p) => str + p.product, ""),
+// 5. Find Extremes in Prices
+"Highest: " + 
+Math.max(...products.map(p => Number(p.price) || -Infinity)) + 
+". Lowest: " + 
+Math.min(...products.map(p => Number(p.price) || Infinity)), // Use Infinity for empty prices
