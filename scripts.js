@@ -43,3 +43,5 @@ console.log(nameProvinceMap);
 console.log(
   // 1. Log Products
   products.map(p => p.product),
+// 2. Filter by Name Length
+products.filter(p => p.product.length <= 5),
