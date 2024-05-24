@@ -56,3 +56,8 @@ products.filter(p => p.product.length <= 5),
 Math.max(...products.map(p => Number(p.price) || -Infinity)) + 
 ". Lowest: " + 
 Math.min(...products.map(p => Number(p.price) || Infinity)), // Use Infinity for empty prices
+ // 6. Object Transformation
+ Object.fromEntries(
+  Object.entries(products).map(([key, { product, price }]) => [key, { name: product, cost: price }])
+)
+);
