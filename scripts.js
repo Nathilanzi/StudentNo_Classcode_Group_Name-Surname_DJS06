@@ -45,3 +45,7 @@ console.log(
   products.map(p => p.product),
 // 2. Filter by Name Length
 products.filter(p => p.product.length <= 5),
+// 3. Price Manipulation
+"Total price: " + products
+.filter(p => p.price && !isNaN(p.price)) // Filter out invalid prices
+.reduce((sum, p) => sum + Number(p.price), 0), // Convert to numbers and sum
